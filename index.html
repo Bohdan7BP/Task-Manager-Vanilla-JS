@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Task Manager</h1>
+    </header>
+
+    <main class="container">
+
+        <section class="task-from">
+            <from id="taskFrom">
+                <input type="text" id="taskInput" placeholder="Enter a task..." required />
+                <button type="submit">Add Task</button>
+            </from>
+        </section>
+
+        <section class="tasks-controls">
+            <select id="filterSelect">
+                <option value="all">All</option>
+                <option value="todo">Todo</option>
+                <option value="in-progress">In Progress</option>
+                <option value="done">Done</option>
+            </select>
+        </section>
+
+        <section class="tasks-list">
+            <ul id="taskList"></ul>
+        </section>
+    </main>
+</body>
+
+</html>
