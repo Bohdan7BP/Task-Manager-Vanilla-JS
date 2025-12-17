@@ -6,11 +6,11 @@ export function initTaskFrom() {
         e.preventDefault();
 
         const value = input.value.trim();
-
         if (!value) return;
 
         console.log("New task", value);
 
+        store.addTask(value);
         input.value = "";
     });
 }
