@@ -1,4 +1,10 @@
-export function renderTasks() {
+export function renderTasks(tasks) {
     const list = document.getElementById("taskList");
-    list.innerHTML = "<li>Task rendering placeholder</li>";
+    list.innerHTML = "";
+
+    tasks.forEach(task => {
+        const li = document.createElement('li');
+        li.textContent = `${task.title} [${task.status}]`;
+        list.appendChild(li);
+    })
 }
